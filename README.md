@@ -1,65 +1,46 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background: #35424a;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-h1, h2 {
-    margin: 10px 0;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin: 20px 0;
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin: 10px 0 5px;
-}
-
-input, textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px;
-    background-color: #35424a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #2c3e50;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: white;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Coding Services</h1>
+        <p>Your one-stop solution for all coding needs!</p>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Mobile App Development</li>
+                <li>Data Analysis</li>
+                <li>API Integration</li>
+                <li>Custom Software Development</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
